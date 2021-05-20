@@ -83,14 +83,9 @@ body {
           transform: translate(-50%, -40%);
 }
 
-.moving-icons {
-  width: 100%;
-  overflow: hidden;
-}
-
 :root {
   --marquee-width: 100vw;
-  --marquee-height: 100px;
+  --marquee-height: 120px;
   --marquee-elements-displayed: 5;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
