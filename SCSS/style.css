@@ -257,7 +257,7 @@ body {
   overflow: hidden;
 }
 
-.slide {
+.slides {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,16 +265,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: slideshow 10s linear infinite;
-          animation: slideshow 10s linear infinite;
+  -webkit-animation: slideshows 10s linear infinite;
+          animation: slideshows 10s linear infinite;
 }
 
-.slide img {
+.slides img {
   height: 70px;
   padding: 0 20px 0 20px;
 }
 
-@-webkit-keyframes slideshow {
+@-webkit-keyframes slideshows {
   0% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -285,7 +285,7 @@ body {
   }
 }
 
-@keyframes slideshow {
+@keyframes slideshows {
   0% {
     -webkit-transform: translateX(0);
             transform: translateX(0);

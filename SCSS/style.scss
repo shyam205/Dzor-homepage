@@ -187,17 +187,17 @@
         display: flex;
         overflow: hidden;
       }
-      .slide {
+      .slides {
         height: 100px;
         display: flex;
         align-items: center;
-        animation: slideshow 10s linear infinite;
+        animation: slideshows 10s linear infinite;
       }
-      .slide img {
+      .slides img {
         height: 70px;
         padding: 0 20px 0 20px;
       }
-      @keyframes slideshow {
+      @keyframes slideshows {
         0% {transform: translateX(0);}
         100% {transform: translateX(-100%);}
       }
