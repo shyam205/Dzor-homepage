@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
   }
   body{
       background-color: #f5f0e5;
@@ -29,6 +30,7 @@
    .register-btn{
        display: inline-block;
        margin-top: -20px;
+       
    }
    .register{
     margin-left: 20px;
@@ -69,7 +71,7 @@
   // moving slider start
   
   :root {
-    --marquee-width: 100vw;
+    --marquee-width: 100%;
     --marquee-height: 120px;
     
     --marquee-elements-displayed: 5;
@@ -297,6 +299,16 @@
     }
  }
 
+ .information-section-h-tag{
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 700;
+ }
+    .information-section-p-tag{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+    }
   // buttons
   .button{
       background-color: #bE505F;
@@ -304,6 +316,61 @@
     .testimonal{
         margin-top: 100px;
     }
+  .footer-section{
+    background-color: rgb(62, 83, 119);
+    .footer{
+        display: flex;
+        .footer-firstsection{
+            width: 50%;
+            padding-left: 100px;
+            .footer-firstsection-logo{
+                width:100px;
+                height: 100px;
+                margin-top: 50px;
+                overflow: hidden;
+                img{
+                   width: 100%;
+                   height: 100%;
+                   object-fit: contain;
+                }
+            }
+            .footer-p-tag{
+                margin-top: 30px;
+            }
+            .footer-firstsection-icons{
+                .footer-firstsection-icons-icon{
+                    margin-left:10px;
+                }
+            }
+        }
+        .footer-secondsection{
+            width: 50%;
+            .footer-secondsection-text{
+                display: flex;
+                margin-top: 40px;
+                width: 100%;
+                .footer-secondsection-text-context{
+                    margin-left: 25px;
+                }
+            }
+            .footer-secondsection-image{
+                width: 100%;
+                img{
+                    height:100px;
+                    width: 200px;
+                    margin-left: 380px;
+                }
+            }
+            
+        }
+    }
+    .footer-last-section{
+        margin-top: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+  }
+
     @media only screen and (min-width:769px) and (max-width:1024px){
         .bg-video{
             height:60vh;
@@ -335,10 +402,22 @@
                 }
             }
         }
+        .footer-secondsection-image{
+            img{
+                margin-left: 180px !important;
+            }
+        }
     }
 
 @media only screen and (max-width:480px){
-    
+    .bg-video{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
   .information{
       width:100% !important;
       padding:30px 20px 30px 20px !important;
@@ -350,7 +429,7 @@
     }
   }
   .information-section-third, .information-section-forth, .information-section-fifth{
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .video-section-third, .video-section-forth, .video-section-fifth{
       margin-top: 40px;
@@ -417,4 +496,46 @@
  .testimonal{
     margin-top: 60px;
   }
+  .information-section-h-tag {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+    .information-section-p-tag{
+        font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        .footer-firstsection{
+            width: 100% !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        .footer-secondsection{
+            width: 100% !important;
+            
+            .footer-secondsection-text{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                .footer-secondsection-text-context{
+                    margin-left: 0px !important;
+                }
+                .fotter-postion-gap{
+                    margin-top: 10px;
+                }
+            }
+            .footer-secondsection-image{
+                margin-top: 20px;
+                img{
+                    margin-left: 60px !important;
+                }
+            }
+        }
+    }
+    .footer-last-section{
+        font-size: 12px;
+    }
 }
