@@ -646,6 +646,10 @@ body {
   margin-bottom: 0;
 }
 
+.footer-section .fotter-postion-gap, .footer-section .fotter-partner {
+  margin-top: 10px;
+}
+
 .contact-banner-section {
   background-color: #BE505F;
   border-radius: 15px;
