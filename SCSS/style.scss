@@ -79,11 +79,10 @@
         z-index: 999;
         display:flex;
         justify-content:space-between;
-        padding:0px 30px 0px 30px;
         align-items: center;
         overflow: hidden;
         box-sizing: border-box;
-       
+        padding: 10px 100px 10px 100px;
       }
       .nav ul{
         margin-right: 100px;
@@ -109,7 +108,7 @@
         display: block;
         transform-origin: 0 0;
         transform:scaleX(0);
-        width: 100%;
+        width: 25px;
         height:3px;
         background-color: #bE505F;
         transition: 0.3s all linear;
@@ -120,6 +119,10 @@
        transform: scaleX(1);
       
        }
+       .register-btn{
+        background: #bE505F;
+        padding: 8px 20px 3px 20px;
+       }
     //    header end
 
   .bg-video{
@@ -127,6 +130,13 @@
     overflow:hidden;
     width:100%;
     margin-top: 71px;
+    .banner-header{
+        font-size: 4.4rem;
+        font-weight: 900;
+    }
+    .banner-header-paratag{
+        font-size: 1.3rem;
+    }
     .background-video{
         width:100%;
         height:100%;
@@ -151,11 +161,31 @@
         top:40%;
         left:50%;
        transform: translate(-50%, -40%);
+       .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+       }
         img{
             height:30px;
         }
        .googleplayicon{
            margin-left: 20px;
+       }
+       .appleicon{
+        background: #bE505F;
+       }
+       .googleplay{
+        background: #3d3737;
+        margin-left: 20px;
+       }
+       .appsicon{
+           margin-left: 10px;
        }
       }
   }
@@ -167,7 +197,7 @@
       }
       .moving-logoslider{
           background-color: white;
-          padding: 50px 0 50px 0;
+          padding: 25px 0 0px 0;
       }
       .wrapper {
         width: 100%;
@@ -191,7 +221,7 @@
         height: 100px;
         display: flex;
         align-items: center;
-        animation: slideshows 12s linear infinite;
+        animation: slideshows 20s linear infinite;
       }
       .slides img {
         height: 70px;
@@ -204,6 +234,7 @@
       
 
   // moving slider end
+  
   .bullet-section{
       background-color: #f5f0e5;
       display: flex;
@@ -238,7 +269,7 @@
        }
     }
   }
-  
+
   
 
 .information-section-first{
@@ -362,12 +393,13 @@
 
  .information-section-h-tag{
     font-size: 2.5rem;
-    line-height: 4rem;
+    line-height: 1.2;
     font-weight: 700;
  }
     .information-section-p-tag{
         font-size: 1.5rem;
-        line-height: 2.5rem;
+        line-height: 1.4;
+        margin-top: 2rem;
         font-weight: 400;
     }
   // buttons
@@ -540,13 +572,16 @@
           }
           .nav ul li a{
             font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 12px;
           }
           .nav ul li a::after{
               margin-top:-10px;
           }
-        .register-btn{
-            margin-top: 10px;
+          .register-btn {
+            padding: 0px 30px 3px 30px;
         }
+        
         // header css end
     }
 
@@ -640,10 +675,18 @@
         .bulletpoint-content-text li{
             font-size: 18px;
         }
-        
+        .register-btn {
+            padding: 0px 30px 3px 30px;
+        }
     }
 
 @media only screen and (max-width:480px){
+    .nav{
+        padding: 10px 10px 10px 10px;
+    }
+    .slides{
+        animation: slideshows 25s linear infinite !important;
+    }
     .bg-video{
         h2{
             font-size: 20px;
@@ -652,9 +695,26 @@
             font-size: 15px;
         }
     }
+    .banner-header{
+        font-size: 2.2rem !important;
+        margin-top: 1rem;
+    }
+    .banner-header-paratag{
+        font-size: 1.1rem !important;
+    }
+    .wrapper{
+        margin-top: 0px;
+        .slides img{
+            padding:0 5px 0 5px;
+        }
+    }
+    .designer{
+        margin-top: 0px;
+    }
   .information{
       width:100% !important;
       padding:30px 20px 30px 20px !important;
+      text-align: center;
       .image-section-first{
          height:300px !important;
       }
@@ -678,13 +738,13 @@
     padding: 30px 20px 30px 20px;
   }
   .information-section-first{
-      flex-direction: column;
+      flex-direction: column-reverse;
       .image-section-first{
           height: 300px;
       }
   }
   .information-section-second{
-    flex-direction: column-reverse;
+    flex-direction: column;
     .image-section-second{
         height: 300px;
     }
@@ -754,10 +814,19 @@
     .footer{
         display: flex;
         flex-direction: column;
+        text-align: center;
         .footer-firstsection{
             width: 100% !important;
             padding-left: 20px !important;
             padding-right: 20px !important;
+            .footer-firstsection-logo{
+                margin-top: 0px !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footer-p-tag{
+                margin-top: 0px !important;
+            }
         }
         .footer-secondsection{
             width: 100% !important;
@@ -776,7 +845,7 @@
             .footer-secondsection-image{
                 margin-top: 20px;
                 img{
-                    margin-left: 60px !important;
+                    margin-left: 0px !important;
                 }
             }
         }
@@ -791,10 +860,35 @@
      }
     }
     .traditional-shopping-experience-header {
-        font-size: 25px;
+        font-size: 24px;
         margin-top: 60px;
     }
     .contact-banner-section{
         width:95% !important;
+    }
+    .footer-secondsection-image{
+        display: inline-block !important;
+        img{
+            width:140px !important;
+            margin-left:0px !important;
+        }
+    }
+    .icons{
+        flex-direction: column;
+        .googleplay{
+            margin-left: 0px !important;
+        }
+        .googleplayicon {
+            margin-left: 10px !important;
+        }
+    }
+}
+@media only screen and (max-width:360px){
+    .bg-video {
+        height: 83vh;
+    }
+    .banner-header {
+        font-size: 2.2rem !important;
+        margin-top: 3rem;
     }
 }

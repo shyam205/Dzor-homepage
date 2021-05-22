@@ -116,13 +116,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 30px 0px 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 10px 100px 10px 100px;
 }
 
 .nav ul {
@@ -158,7 +158,7 @@ body {
           transform-origin: 0 0;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  width: 100%;
+  width: 25px;
   height: 3px;
   background-color: #bE505F;
   -webkit-transition: 0.3s all linear;
@@ -173,11 +173,25 @@ body {
           transform: scaleX(1);
 }
 
+.register-btn {
+  background: #bE505F;
+  padding: 8px 20px 3px 20px;
+}
+
 .bg-video {
   height: 70vh;
   overflow: hidden;
   width: 100%;
   margin-top: 71px;
+}
+
+.bg-video .banner-header {
+  font-size: 4.4rem;
+  font-weight: 900;
+}
+
+.bg-video .banner-header-paratag {
+  font-size: 1.3rem;
 }
 
 .bg-video .background-video {
@@ -211,6 +225,30 @@ body {
           transform: translate(-50%, -40%);
 }
 
+.bg-video .text-container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg-video .text-container .icons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .bg-video .text-container img {
   height: 30px;
 }
@@ -219,13 +257,26 @@ body {
   margin-left: 20px;
 }
 
+.bg-video .text-container .appleicon {
+  background: #bE505F;
+}
+
+.bg-video .text-container .googleplay {
+  background: #3d3737;
+  margin-left: 20px;
+}
+
+.bg-video .text-container .appsicon {
+  margin-left: 10px;
+}
+
 .designer {
   font-weight: 600;
 }
 
 .moving-logoslider {
   background-color: white;
-  padding: 50px 0 50px 0;
+  padding: 25px 0 0px 0;
 }
 
 .wrapper {
@@ -265,8 +316,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: slideshows 12s linear infinite;
-          animation: slideshows 12s linear infinite;
+  -webkit-animation: slideshows 20s linear infinite;
+          animation: slideshows 20s linear infinite;
 }
 
 .slides img {
@@ -490,13 +541,14 @@ body {
 
 .information-section-h-tag {
   font-size: 2.5rem;
-  line-height: 4rem;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 .information-section-p-tag {
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 1.4;
+  margin-top: 2rem;
   font-weight: 400;
 }
 
@@ -725,12 +777,14 @@ body {
   }
   .nav ul li a {
     font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
   .nav ul li a::after {
     margin-top: -10px;
   }
   .register-btn {
-    margin-top: 10px;
+    padding: 0px 30px 3px 30px;
   }
 }
 
@@ -824,18 +878,45 @@ body {
   .bulletpoint-content-text li {
     font-size: 18px;
   }
+  .register-btn {
+    padding: 0px 30px 3px 30px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .nav {
+    padding: 10px 10px 10px 10px;
+  }
+  .slides {
+    -webkit-animation: slideshows 25s linear infinite !important;
+            animation: slideshows 25s linear infinite !important;
+  }
   .bg-video h2 {
     font-size: 20px;
   }
   .bg-video p {
     font-size: 15px;
   }
+  .banner-header {
+    font-size: 2.2rem !important;
+    margin-top: 1rem;
+  }
+  .banner-header-paratag {
+    font-size: 1.1rem !important;
+  }
+  .wrapper {
+    margin-top: 0px;
+  }
+  .wrapper .slides img {
+    padding: 0 5px 0 5px;
+  }
+  .designer {
+    margin-top: 0px;
+  }
   .information {
     width: 100% !important;
     padding: 30px 20px 30px 20px !important;
+    text-align: center;
   }
   .information .image-section-first {
     height: 300px !important;
@@ -860,18 +941,18 @@ body {
   }
   .information-section-first {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .information-section-first .image-section-first {
     height: 300px;
   }
   .information-section-second {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .information-section-second .image-section-second {
     height: 300px;
@@ -954,11 +1035,20 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .footer .footer-firstsection {
     width: 100% !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+  .footer .footer-firstsection .footer-firstsection-logo {
+    margin-top: 0px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer .footer-firstsection .footer-p-tag {
+    margin-top: 0px !important;
   }
   .footer .footer-secondsection {
     width: 100% !important;
@@ -983,7 +1073,7 @@ body {
     margin-top: 20px;
   }
   .footer .footer-secondsection .footer-secondsection-image img {
-    margin-left: 60px !important;
+    margin-left: 0px !important;
   }
   .footer-last-section {
     font-size: 12px;
@@ -995,11 +1085,40 @@ body {
     display: inline-block;
   }
   .traditional-shopping-experience-header {
-    font-size: 25px;
+    font-size: 24px;
     margin-top: 60px;
   }
   .contact-banner-section {
     width: 95% !important;
+  }
+  .footer-secondsection-image {
+    display: inline-block !important;
+  }
+  .footer-secondsection-image img {
+    width: 140px !important;
+    margin-left: 0px !important;
+  }
+  .icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .icons .googleplay {
+    margin-left: 0px !important;
+  }
+  .icons .googleplayicon {
+    margin-left: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .bg-video {
+    height: 83vh;
+  }
+  .banner-header {
+    font-size: 2.2rem !important;
+    margin-top: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
