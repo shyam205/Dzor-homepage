@@ -185,13 +185,18 @@
        }
        .appleicon{
         background: #bE505F;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
        }
        .googleplay{
         background: #3d3737;
         margin-left: 20px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
        }
        .appsicon{
            margin-left: 10px;
+       }
+       .googleplay:hover, .appleicon:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
        }
       }
   }

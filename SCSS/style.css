@@ -270,15 +270,24 @@ body {
 
 .bg-video .text-container .appleicon {
   background: #bE505F;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
 }
 
 .bg-video .text-container .googleplay {
   background: #3d3737;
   margin-left: 20px;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
 }
 
 .bg-video .text-container .appsicon {
   margin-left: 10px;
+}
+
+.bg-video .text-container .googleplay:hover, .bg-video .text-container .appleicon:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .designer {
