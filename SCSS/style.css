@@ -151,6 +151,10 @@ body {
   font-size: 14px;
 }
 
+.nav ul li a:hover {
+  color: red;
+}
+
 .nav ul li a::after {
   content: "";
   display: block;
