@@ -1156,9 +1156,6 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .icons .googleplay {
-    margin-left: 0px !important;
-  }
   .icons .googleplayicon {
     margin-left: 10px !important;
   }
