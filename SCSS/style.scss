@@ -78,14 +78,13 @@
         background-color: white;
         z-index: 999;
         display:flex;
-        justify-content:space-between;
+        justify-content:space-evenly;
         align-items: center;
         overflow: hidden;
         box-sizing: border-box;
-        padding: 10px 100px 10px 100px;
+        padding: 0.5rem 8vw;
       }
       .nav ul{
-        margin-right: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -103,7 +102,7 @@
         font-size: 14px;
       }
       .nav ul li a:hover{
-        color:red;
+        color:#bE505F;
       }
       .nav ul li a::after{
         content:"";
@@ -181,7 +180,10 @@
             height:30px;
         }
        .googleplayicon{
-           margin-left: 20px;
+           margin-left: 15px;
+           img{
+               margin-left: 15px !important;
+           }
        }
        .appleicon{
         background: #bE505F;
@@ -496,7 +498,7 @@
             padding: 30px 45px;
             border-radius: 15px;
             .contact-banner-detailsection{
-                width: 60%;
+                width: 85%;
                 p{
                     font-size: 25px;
                     font-weight: bold;
@@ -507,7 +509,7 @@
                 }
             }
             .contact-banner-buttonsection{
-                width: 20%;
+                width: 15%;
                 a{
                     background-color: #3d3737;
                     font-weight: 500;
@@ -544,10 +546,9 @@
        margin-top: 20px;
     }
 
-    @media only screen and (max-width:1024px){
+    @media only screen and (max-width:1240px){
 
         // header css start
-
         .nav{
             display:flex;
             flex-direction: column;
@@ -595,10 +596,9 @@
           .register-btn {
             padding: 0px 30px 3px 30px;
         }
-        
         // header css end
     }
-
+ 
     @media only screen and (min-width:769px) and (max-width:1024px){
         .bg-video{
             height:60vh;
@@ -698,6 +698,11 @@
     .nav{
         padding: 10px 10px 10px 10px;
     }
+    .bg-video .text-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .slides{
         animation: slideshows 25s linear infinite !important;
     }
@@ -712,7 +717,7 @@
     }
     .banner-header{
         font-size: 2.2rem !important;
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
     .banner-header-paratag{
         font-size: 1.1rem !important;
@@ -889,13 +894,16 @@
         }
     }
     .icons{
-        flex-direction: column;
+        flex-direction: row;
         .googleplay{
             margin-left: 0px !important;
         }
         .googleplayicon {
             margin-left: 10px !important;
         }
+    }
+    .googleplay {
+        margin-left: 10px !important;
     }
 }
 
@@ -907,12 +915,32 @@
         font-size: 2.2rem !important;
         margin-top: 3rem;
     }
+    .icons{
+        img{
+            height:25px;
+        }
+        .googleplay {
+            margin-left: 10px !important;
+        }
+    }
+    .banner-header {
+        font-size: 1.8rem !important;
+        margin-top: 3rem;
+    }    
+    
 }
 @media only screen and (max-width:320px){
     .bg-video {
-        height: 88vh;
+        height: 75vh;
     }
     .banner-header {
-        margin-top: 5rem;
+        margin-top: 0rem;
+        font-size: 1.5rem !important;
     }
+    .appsicon {
+       font-size: 0.8rem;
+    }.text-container img {
+        height: 25px !important;
+    }
+    
 }
