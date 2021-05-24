@@ -286,6 +286,7 @@ body {
 
 .bg-video .text-container .appsicon {
   margin-left: 10px;
+  white-space: nowrap;
 }
 
 .bg-video .text-container .googleplay:hover, .bg-video .text-container .appleicon:hover {
@@ -812,6 +813,21 @@ body {
   }
   .register-btn {
     padding: 0px 30px 3px 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-banner-detailsection {
+    width: 80% !important;
+  }
+  .contact-banner-buttonsection {
+    width: 20% !important;
+  }
+  .text-container {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
   }
 }
 
