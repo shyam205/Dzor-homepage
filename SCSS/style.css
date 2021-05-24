@@ -915,6 +915,9 @@ body {
     -webkit-animation: slideshows 25s linear infinite !important;
             animation: slideshows 25s linear infinite !important;
   }
+  .bg-video {
+    height: 75vh;
+  }
   .bg-video h2 {
     font-size: 20px;
   }
