@@ -1148,4 +1148,13 @@ body {
     margin-top: 3rem;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .bg-video {
+    height: 88vh;
+  }
+  .banner-header {
+    margin-top: 5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
