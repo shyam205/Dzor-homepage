@@ -7,7 +7,9 @@
 
 body {
   background-color: #f5f0e5;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 .logo {
@@ -148,6 +150,7 @@ body {
   text-decoration: none;
   color: black;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .nav ul li a:hover {
@@ -177,15 +180,26 @@ body {
 }
 
 .register-btn {
-  background: #bE505F;
-  padding: 8px 20px 3px 20px;
+  color: #bE505F !important;
+  border: 1px solid #bE505F;
+  padding: 8px 20px 5px 20px;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
+  -webkit-transition: 0.4s all linear;
+  transition: 0.4s all linear;
 }
 
 .register-btn:hover {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  color: white !important;
+  background-color: #bE505F;
+}
+
+.register-btn::after {
+  content: "";
+  display: none !important;
 }
 
 .bg-video {
@@ -235,6 +249,14 @@ body {
           transform: translate(-50%, -40%);
 }
 
+.bg-video .text-container .banner-header {
+  font-weight: 800;
+}
+
+.bg-video .text-container .subheading {
+  font-weight: 600;
+}
+
 .bg-video .text-container .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,12 +294,17 @@ body {
 }
 
 .bg-video .text-container .appleicon {
+  padding: 10px 20px;
+  max-width: 170px;
+  width: 50%;
   background: #bE505F;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
 }
 
 .bg-video .text-container .googleplay {
+  padding: 10px 20px;
+  max-width: 170px;
   background: #3d3737;
   margin-left: 20px;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
@@ -287,10 +314,6 @@ body {
 .bg-video .text-container .appsicon {
   margin-left: 10px;
   white-space: nowrap;
-}
-
-.bg-video .text-container .appgoogleplay {
-  margin-left: 15px !important;
 }
 
 .bg-video .text-container .googleplay:hover, .bg-video .text-container .appleicon:hover {
@@ -351,6 +374,8 @@ body {
 .slides img {
   height: 70px;
   padding: 0 20px 0 20px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 @-webkit-keyframes slideshows {
@@ -692,7 +717,7 @@ body {
 }
 
 .contact-banner-section .contact-banner .contact-banner-detailsection {
-  width: 85%;
+  width: 80%;
 }
 
 .contact-banner-section .contact-banner .contact-banner-detailsection p {
@@ -808,15 +833,21 @@ body {
     margin-top: -15px;
   }
   .nav ul li a {
+    font-size: 16px;
     font-weight: bold;
     margin-top: 12px;
     margin-bottom: 12px;
+    text-decoration: underline;
   }
   .nav ul li a::after {
     margin-top: -10px;
   }
   .register-btn {
-    padding: 0px 30px 3px 30px;
+    padding: 0px 30px 0px 30px;
+    text-decoration: none !important;
+  }
+  .contact-banner-buttonsection {
+    width: 20% !important;
   }
 }
 
@@ -1201,6 +1232,14 @@ body {
   }
   .text-container img {
     height: 25px !important;
+  }
+  .googleplay {
+    padding: 10px 15px;
+    max-width: 150px !important;
+  }
+  .appleicon {
+    padding: 10px 15px;
+    max-width: 150px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

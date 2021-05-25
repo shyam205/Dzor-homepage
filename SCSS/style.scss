@@ -1,3 +1,6 @@
+
+
+
 *{
     margin:0;
     padding:0;
@@ -5,7 +8,9 @@
   }
   body{
       background-color: #f5f0e5;
-      font-family: Montserrat, sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
   }
     //    header start
 
@@ -100,6 +105,7 @@
         text-decoration: none;
         color:black;
         font-size: 14px;
+        font-weight: 600;
       }
       .nav ul li a:hover{
         color:#bE505F;
@@ -121,11 +127,20 @@
       
        }
        .register-btn{
-        background: #bE505F;
-        padding: 8px 20px 3px 20px;
+        color: #bE505F !important;
+        border: 1px solid #bE505F;
+        padding: 8px 20px 5px 20px;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
+        transition: 0.4s all linear;
         &:hover{
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-decoration: none;
+            color:white !important;
+            background-color: #bE505F;
+        }
+        &::after{
+            content:"";
+            display: none !important;
         }
        }
     //    header end
@@ -166,6 +181,12 @@
         top:40%;
         left:50%;
        transform: translate(-50%, -40%);
+       .banner-header{
+        font-weight: 800;
+       }
+       .subheading{
+           font-weight: 600;
+       }
        .icons{
         display: flex;
         align-items: center;
@@ -186,10 +207,16 @@
            }
        }
        .appleicon{
+        padding: 10px 20px;
+        max-width: 170px;
+        width: 50%;
         background: #bE505F;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
+        
        }
        .googleplay{
+        padding: 10px 20px;
+        max-width: 170px;
         background: #3d3737;
         margin-left: 20px;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
@@ -198,9 +225,7 @@
            margin-left: 10px;
            white-space: nowrap;
        }
-       .appgoogleplay{
-        margin-left: 15px !important;
-       }
+       
        .googleplay:hover, .appleicon:hover{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
        }
@@ -243,6 +268,8 @@
       .slides img {
         height: 70px;
         padding: 0 20px 0 20px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
       }
       @keyframes slideshows {
         0% {transform: translateX(0);}
@@ -502,7 +529,7 @@
             padding: 30px 45px;
             border-radius: 15px;
             .contact-banner-detailsection{
-                width: 85%;
+                width: 80%;
                 p{
                     font-size: 25px;
                     font-weight: bold;
@@ -590,17 +617,23 @@
               margin-top: -15px;
           }
           .nav ul li a{
+              font-size: 16px;
             font-weight: bold;
             margin-top: 12px;
             margin-bottom: 12px;
+            text-decoration: underline;
           }
           .nav ul li a::after{
               margin-top:-10px;
           }
           .register-btn {
-            padding: 0px 30px 3px 30px;
+            padding: 0px 30px 0px 30px;
+            text-decoration: none !important;
         }
         // header css end
+        .contact-banner-buttonsection {
+            width: 20% !important;
+        }
     }
  
     @media only screen and (max-width:1024px){
@@ -958,5 +991,12 @@
     }.text-container img {
         height: 25px !important;
     }
-    
+    .googleplay {
+        padding: 10px 15px;
+        max-width: 150px !important;
+    }
+    .appleicon {
+        padding: 10px 15px;
+        max-width: 150px !important;
+    }
 }
