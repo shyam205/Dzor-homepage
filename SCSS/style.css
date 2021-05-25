@@ -289,6 +289,10 @@ body {
   white-space: nowrap;
 }
 
+.bg-video .text-container .appgoogleplay {
+  margin-left: 15px !important;
+}
+
 .bg-video .text-container .googleplay:hover, .bg-video .text-container .appleicon:hover {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
