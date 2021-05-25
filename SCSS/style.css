@@ -984,12 +984,15 @@ header {
             flex-direction: column;
   }
   .bullet-section .bullet-image-section {
-    width: 100%;
+    width: 100% !important;
     height: 350px;
     overflow: hidden;
   }
+  .bullet-section .bullet-image-section {
+    width: 100% !important;
+  }
   .bullet-section .bullet-point {
-    width: 100%;
+    width: 100% !important;
   }
   .contact-banner-buttonsection {
     margin-top: 40px !important;

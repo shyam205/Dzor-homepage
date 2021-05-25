@@ -757,12 +757,15 @@
         .bullet-section{
             flex-direction: column;
             .bullet-image-section {
-                width: 100%;
+                width: 100% !important;
                 height: 350px;
                 overflow: hidden;
             }
+            .bullet-image-section {
+                width: 100% !important;
+            }
             .bullet-point {
-                width: 100%;
+                width: 100% !important;
             }
         }
         .contact-banner-buttonsection {
