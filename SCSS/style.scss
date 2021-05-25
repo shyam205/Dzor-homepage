@@ -7,7 +7,6 @@
     box-sizing: border-box;
   }
   body{
-      background-color: #f5f0e5;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
@@ -278,9 +277,10 @@
       
 
   // moving slider end
-  
+  .Download-dzor-point{
+   background-color: white;
+ 
   .bullet-section{
-      background-color: #f5f0e5;
       display: flex;
       align-items: center;
     .bullet-point{
@@ -313,9 +313,14 @@
        }
     }
   }
-
+}
   
-
+.shop{
+    background-color: #D6D9DD;
+    padding-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
 .information-section-first{
     display: flex;
     align-items: center;
@@ -354,7 +359,7 @@
     }
 
  .information-section-third, .information-section-forth, .information-section-fifth{
-     margin-top: 100px;
+     margin-bottom: 100px;
     display: flex;
     .text-section{
         width: 50%;
@@ -365,6 +370,7 @@
         width: 50%;
         overflow: hidden;
         border-radius: 30px;
+        z-index: 2;
         video{
             object-fit: contain;
             background-repeat: no-repeat;
@@ -391,6 +397,7 @@
         width: 50%;
         overflow: hidden;
         border-radius: 30px;
+        z-index: 2;
         video{
             object-fit: contain;
             background-repeat: no-repeat;
@@ -418,6 +425,7 @@
         width: 50%;
         overflow: hidden;
         border-radius: 30px;
+        z-index: 2;
         video{
             object-fit: contain;
             background-repeat: no-repeat;

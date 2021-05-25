@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: #f5f0e5;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -400,8 +399,11 @@ body {
   }
 }
 
-.bullet-section {
-  background-color: #f5f0e5;
+.Download-dzor-point {
+  background-color: white;
+}
+
+.Download-dzor-point .bullet-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,40 +412,47 @@ body {
           align-items: center;
 }
 
-.bullet-section .bullet-point {
+.Download-dzor-point .bullet-section .bullet-point {
   width: 50%;
   overflow-x: hidden;
 }
 
-.bullet-section .bullet-point .bulletpoint-content {
+.Download-dzor-point .bullet-section .bullet-point .bulletpoint-content {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.bullet-section .bullet-point .bulletpoint-content .bulletpoint-content-text li {
+.Download-dzor-point .bullet-section .bullet-point .bulletpoint-content .bulletpoint-content-text li {
   font-size: 20px;
 }
 
-.bullet-section .bullet-point .bulletpoint-content h4 {
+.Download-dzor-point .bullet-section .bullet-point .bulletpoint-content h4 {
   font-size: 2.5rem;
   line-height: 3.5rem;
   font-weight: 700;
 }
 
-.bullet-section .bullet-image-section {
+.Download-dzor-point .bullet-section .bullet-image-section {
   width: 50%;
   height: 500px;
   overflow: hidden;
 }
 
-.bullet-section .bullet-image-section img {
+.Download-dzor-point .bullet-section .bullet-image-section img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+
+.shop {
+  background-color: #D6D9DD;
+  padding-top: 100px;
+  margin-top: 50px;
+  padding-bottom: 20px;
 }
 
 .information-section-first {
@@ -501,7 +510,7 @@ body {
 }
 
 .information-section-third, .information-section-forth, .information-section-fifth {
-  margin-top: 100px;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,6 +526,7 @@ body {
   width: 50%;
   overflow: hidden;
   border-radius: 30px;
+  z-index: 2;
 }
 
 .information-section-third .video-section-third video, .information-section-forth .video-section-third video, .information-section-fifth .video-section-third video {
@@ -544,6 +554,7 @@ body {
   width: 50%;
   overflow: hidden;
   border-radius: 30px;
+  z-index: 2;
 }
 
 .information-section-forth .video-section-forth video {
@@ -573,6 +584,7 @@ body {
   width: 50%;
   overflow: hidden;
   border-radius: 30px;
+  z-index: 2;
 }
 
 .information-section-fifth .video-section-fifth video {
