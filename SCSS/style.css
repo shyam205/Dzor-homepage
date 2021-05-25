@@ -105,6 +105,11 @@ body {
   display: block;
 }
 
+header {
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -294,7 +299,7 @@ body {
 
 .bg-video .text-container .appleicon {
   padding: 10px 20px;
-  max-width: 170px;
+  max-width: 180px;
   width: 50%;
   background: #bE505F;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
@@ -303,7 +308,7 @@ body {
 
 .bg-video .text-container .googleplay {
   padding: 10px 20px;
-  max-width: 170px;
+  max-width: 180px;
   background: #3d3737;
   margin-left: 20px;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
@@ -840,6 +845,7 @@ body {
     padding: 0px;
     margin-top: 0px !important;
     line-height: 50px;
+    border-bottom: 1px solid gray;
   }
   .second-unorderlist {
     margin-top: -15px;
@@ -849,7 +855,6 @@ body {
     font-weight: bold;
     margin-top: 12px;
     margin-bottom: 12px;
-    text-decoration: underline;
   }
   .nav ul li a::after {
     margin-top: -10px;
@@ -857,6 +862,9 @@ body {
   .register-btn {
     padding: 0px 30px 0px 30px;
     text-decoration: none !important;
+  }
+  .register-button {
+    border-bottom: none !important;
   }
   .contact-banner-buttonsection {
     width: 20% !important;
@@ -876,6 +884,24 @@ body {
     -webkit-transform: translate(-50%, -50%) !important;
             transform: translate(-50%, -50%) !important;
   }
+  .contact-banner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-banner .contact-banner-detailsection {
+    width: 100% !important;
+  }
+  .contact-banner .contact-banner-buttonsection {
+    width: 100% !important;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -884,6 +910,9 @@ body {
   }
   .footer-secondsection-image img {
     margin-left: 220px !important;
+  }
+  .contact-banner-buttonsection {
+    margin-top: 30px !important;
   }
 }
 
@@ -914,7 +943,7 @@ body {
     line-height: 2rem;
   }
   .footer-secondsection-image img {
-    margin-left: 150px !important;
+    margin-left: 50px !important;
   }
   .contact-banner {
     width: 100%;
@@ -973,6 +1002,70 @@ body {
   }
 }
 
+@media only screen and (max-width: 660px) {
+  .information-section-first {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .information-section-first .image-section-first {
+    height: 300px;
+  }
+  .information-section-first .footer-secondsection-image img {
+    margin-left: 36px !important;
+  }
+  .information-section-second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .information-section-second .image-section-second {
+    height: 300px;
+  }
+  .information-section-third {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .information-section-third .video-section-third {
+    height: 300px;
+  }
+  .information-section-forth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .information-section-forth .video-section-forth {
+    height: 300px;
+  }
+  .information-section-fifth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .information-section-fifth .video-section-fifth {
+    height: 300px;
+  }
+  .information {
+    width: 100% !important;
+    text-align: center;
+  }
+  .text-section {
+    width: 100%;
+  }
+  .video-section-third, .video-section-forth, .video-section-fifth {
+    margin-top: 40px;
+  }
+  .bullet-point {
+    width: 100% !important;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .nav {
     padding: 10px 10px 10px 10px;
@@ -1025,6 +1118,7 @@ body {
   }
   .information-section-third, .information-section-forth, .information-section-fifth {
     margin-top: 0px;
+    margin-bottom: 45px;
   }
   .video-section-third, .video-section-forth, .video-section-fifth {
     margin-top: 40px;
@@ -1038,51 +1132,6 @@ body {
   .information {
     padding: 30px 20px 30px 20px;
   }
-  .information-section-first {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .information-section-first .image-section-first {
-    height: 300px;
-  }
-  .information-section-second {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .information-section-second .image-section-second {
-    height: 300px;
-  }
-  .information-section-third {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .information-section-third .video-section-third {
-    height: 300px;
-  }
-  .information-section-forth {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .information-section-forth .video-section-forth {
-    height: 300px;
-  }
-  .information-section-fifth {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .information-section-fifth .video-section-fifth {
-    height: 300px;
-  }
   .marquee-content li {
     width: 30%;
   }
@@ -1091,7 +1140,7 @@ body {
   }
   .bullet-section .bullet-point {
     padding: 30px 20 30px 20px;
-    width: 100%;
+    width: 100% !important;
   }
   .bullet-section .bullet-point .bulletpoint-content {
     width: auto;
@@ -1102,7 +1151,7 @@ body {
     font-weight: 700;
   }
   .bullet-section .bullet-image-section {
-    width: 100%;
+    width: 100% !important;
     height: 300px;
   }
   .bulletpoint-content-header {
@@ -1208,6 +1257,13 @@ body {
   }
   .googleplay {
     margin-left: 10px !important;
+    max-width: 160px !important;
+  }
+  .appleicon {
+    max-width: 160px !important;
+  }
+  .shop {
+    padding-top: 30px;
   }
 }
 

@@ -75,6 +75,10 @@
       .unlist{
         display: block;
       }
+      header{
+          width: 100% !important;
+          overflow: hidden !important;
+      }
       .nav{
           position: fixed;
           top:0;
@@ -125,6 +129,7 @@
        transform: scaleX(1);
       
        }
+       
        .register-btn{
         color: #bE505F !important;
         border: 1px solid #bE505F;
@@ -207,7 +212,7 @@
        }
        .appleicon{
         padding: 10px 20px;
-        max-width: 170px;
+        max-width: 180px;
         width: 50%;
         background: #bE505F;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
@@ -215,7 +220,7 @@
        }
        .googleplay{
         padding: 10px 20px;
-        max-width: 170px;
+        max-width: 180px;
         background: #3d3737;
         margin-left: 20px;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
@@ -620,6 +625,7 @@
             padding:0px;
             margin-top: 0px !important;
             line-height: 50px;
+            border-bottom: 1px solid gray;
           }
           .second-unorderlist{
               margin-top: -15px;
@@ -629,7 +635,6 @@
             font-weight: bold;
             margin-top: 12px;
             margin-bottom: 12px;
-            text-decoration: underline;
           }
           .nav ul li a::after{
               margin-top:-10px;
@@ -637,6 +642,9 @@
           .register-btn {
             padding: 0px 30px 0px 30px;
             text-decoration: none !important;
+        }
+        .register-button{
+            border-bottom: none !important;
         }
         // header css end
         .contact-banner-buttonsection {
@@ -656,6 +664,19 @@
             left: 50%;
             transform: translate(-50%, -50%) !important;
         }
+        .contact-banner{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .contact-banner-detailsection{
+                width: 100% !important;
+            }
+            .contact-banner-buttonsection{
+                width: 100% !important;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
     }
 
     @media only screen and (min-width:769px) and (max-width:1024px){
@@ -665,7 +686,9 @@
         .footer-secondsection-image img {
             margin-left: 220px !important;
         }
-        
+        .contact-banner-buttonsection{
+            margin-top:30px !important;
+        }
     }
 
     @media only screen and (max-width:768px){
@@ -706,7 +729,7 @@
             }
         .footer-secondsection-image{
             img{
-                margin-left: 150px !important;
+                margin-left: 50px !important;
             }
         }
         .contact-banner{
@@ -753,7 +776,56 @@
         }
     }
 
-@media only screen and (max-width:480px){
+    @media only screen and (max-width:660px){
+        .information-section-first{
+            flex-direction: column-reverse;
+            .image-section-first{
+                height: 300px;
+            }
+            .footer-secondsection-image img {
+                margin-left: 36px !important;
+            }
+        }
+        .information-section-second{
+          flex-direction: column;
+          .image-section-second{
+              height: 300px;
+          }
+       }
+       .information-section-third{
+          flex-direction: column;
+          .video-section-third{
+              height: 300px;
+          }
+       }
+       .information-section-forth{
+          flex-direction: column-reverse;
+          .video-section-forth{
+              height: 300px;
+          }
+       }
+       .information-section-fifth{
+          flex-direction: column;
+          .video-section-fifth{
+              height: 300px;
+          }
+       }
+       .information{
+        width:100% !important;
+        text-align: center;
+       }
+       .text-section{
+        width: 100%;
+       }
+       .video-section-third, .video-section-forth, .video-section-fifth{
+        margin-top: 40px;
+       }
+       .bullet-point {
+        width: 100% !important;
+      }
+    }
+
+   @media only screen and (max-width:480px){
     .nav{
         padding: 10px 10px 10px 10px;
     }
@@ -803,6 +875,7 @@
   }
   .information-section-third, .information-section-forth, .information-section-fifth{
     margin-top: 0px;
+    margin-bottom: 45px;
   }
   .video-section-third, .video-section-forth, .video-section-fifth{
       margin-top: 40px;
@@ -816,36 +889,7 @@
   .information{
     padding: 30px 20px 30px 20px;
   }
-  .information-section-first{
-      flex-direction: column-reverse;
-      .image-section-first{
-          height: 300px;
-      }
-  }
-  .information-section-second{
-    flex-direction: column;
-    .image-section-second{
-        height: 300px;
-    }
- }
- .information-section-third{
-    flex-direction: column;
-    .video-section-third{
-        height: 300px;
-    }
- }
- .information-section-forth{
-    flex-direction: column-reverse;
-    .video-section-forth{
-        height: 300px;
-    }
- }
- .information-section-fifth{
-    flex-direction: column;
-    .video-section-fifth{
-        height: 300px;
-    }
- }
+ 
  .marquee-content li{
      width:30%;
  }
@@ -853,7 +897,7 @@
     display: block;
     .bullet-point{
         padding: 30px 20 30px 20px;
-        width:100%;
+        width:100% !important;
         .bulletpoint-content{
             width: auto;
             h4{
@@ -864,7 +908,7 @@
         }
     }
     .bullet-image-section{
-        width:100%;
+        width:100% !important;
         height:300px;
     }
  }
@@ -961,6 +1005,13 @@
     }
     .googleplay {
         margin-left: 10px !important;
+        max-width:160px !important;
+    }
+    .appleicon{
+        max-width:160px !important;
+    }
+    .shop{
+        padding-top:30px;
     }
 }
 
