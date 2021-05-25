@@ -255,6 +255,9 @@ header {
 
 .bg-video .text-container .banner-header {
   font-weight: 800;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
 }
 
 .bg-video .text-container .subheading {
@@ -309,7 +312,7 @@ header {
 .bg-video .text-container .googleplay {
   padding: 10px 20px;
   max-width: 180px;
-  background: #3d3737;
+  background: #bE505F;
   margin-left: 20px;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
@@ -326,7 +329,7 @@ header {
 }
 
 .designer {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .moving-logoslider {
@@ -458,6 +461,10 @@ header {
   padding-top: 100px;
   margin-top: 50px;
   padding-bottom: 20px;
+}
+
+.info {
+  background-color: #F5F0E5;
 }
 
 .information-section-first {
@@ -1095,6 +1102,7 @@ header {
   .banner-header {
     font-size: 2.2rem !important;
     margin-top: 0rem;
+    width: 95% !important;
   }
   .banner-header-paratag {
     font-size: 1.1rem !important;
@@ -1287,6 +1295,10 @@ header {
   .banner-header {
     font-size: 1.8rem !important;
     margin-top: 3rem;
+  }
+  .text-container img {
+    height: 20px !important;
+    width: 20px !important;
   }
 }
 
