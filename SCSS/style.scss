@@ -270,7 +270,7 @@
         height: 100px;
         display: flex;
         align-items: center;
-        animation: slideshows 20s linear infinite;
+        animation: slideshows 30s linear infinite;
       }
       .slides img {
         height: 70px;
@@ -333,10 +333,14 @@
     background-color: #F5F0E5;
 }
 .information-section-first{
+    text-align: center;
+    background-image: url('../images/01-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     .information{
-        width: 50%;
+        width: 100%;
     }
     .image-section-first{
         height: 500px;
@@ -463,7 +467,7 @@
         font-size: 1.5rem;
         line-height: 1.4;
         margin-top: 2rem;
-        font-weight: 400;
+        font-weight: 600;
     }
   // buttons
   .button{
@@ -481,7 +485,8 @@
   .footer-section{
     background-color: rgb(62, 83, 119);
     margin-top: 50px;
-    font-family:sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     .footer{
         display: flex;
         .footer-firstsection{
@@ -560,10 +565,11 @@
                 }
             }
             .contact-banner-buttonsection{
-                width: 15%;
+                width: 20%;
                 a{
                     background-color: #3d3737;
                     font-weight: 500;
+                    font-size: 14px;
                 }
             }
         }
@@ -596,7 +602,22 @@
        margin-bottom: 20px;
        margin-top: 20px;
     }
-
+     .SupportKarigars{
+         width:100%;
+         background-color: white;
+         text-align: center;
+         h2{
+            font-size: 2.2rem;
+            line-height: 1.2;
+            font-weight: 700;
+         }
+         img{
+             width:100%;
+             height:100%;
+             object-fit: cover;
+             object-position: center;
+         }
+     }
     @media only screen and (max-width:1240px){
 
         // header css start
@@ -655,7 +676,10 @@
         }
         // header css end
         .contact-banner-buttonsection {
-            width: 20% !important;
+            width: 25% !important;
+        }
+        .contact-banner-detailsection{
+            width: 75% !important;
         }
     }
  
@@ -1023,6 +1047,11 @@
     }
     .shop{
         padding-top:30px;
+    }
+     .SupportKarigars{
+        h2{
+            font-size: 1.6rem;
+        }
     }
 }
 
