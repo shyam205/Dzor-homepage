@@ -334,7 +334,7 @@
 }
 .information-section-first{
     text-align: center;
-    background-image: url('../images/01-min.jpg');
+    background-image: url('../images/design-9.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -607,11 +607,11 @@
     }
      .SupportKarigars{
          width:100%;
-         background-image: url('../images/01-min.jpg');
+         background-image: url('../images/SupportKarigars.png');
          background-repeat: no-repeat;
          background-size: cover;
          text-align: center;
-         height:400px;
+         height:600px;
          overflow: hidden;
          position: relative;
          h2{
@@ -1065,6 +1065,7 @@
         padding-top:30px;
     }
      .SupportKarigars{
+         height:400px;
         h2{
             font-size: 1.6rem;
         }
