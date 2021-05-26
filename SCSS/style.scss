@@ -198,6 +198,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
           a{
             display: flex;
             align-items: center;
@@ -631,6 +632,13 @@
              object-position: center;
          }
      }
+
+     #play-icon{
+        height: 30px !important;
+        width: 30px !important;
+    }
+
+
     @media only screen and (max-width:1240px){
 
         // header css start
@@ -694,6 +702,7 @@
         .contact-banner-detailsection{
             width: 75% !important;
         }
+       
     }
  
     @media only screen and (max-width:1024px){
@@ -1049,7 +1058,7 @@
     }
     .icons{
         flex-direction: row;
-        
+        margin-bottom: 15px;
         .googleplayicon {
             margin-left: 10px !important;
         }
@@ -1070,6 +1079,7 @@
             font-size: 1.6rem;
         }
     }
+    
 }
 
 @media only screen and (max-width:360px){
@@ -1096,6 +1106,7 @@
         height: 20px !important;
         width: 20px !important;
     }
+    
 }
 @media only screen and (max-width:320px){
     .bg-video {

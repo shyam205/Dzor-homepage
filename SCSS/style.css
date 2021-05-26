@@ -274,6 +274,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
 }
 
 .bg-video .text-container .icons a {
@@ -845,6 +846,11 @@ header {
      object-position: center;
 }
 
+#play-icon {
+  height: 30px !important;
+  width: 30px !important;
+}
+
 @media only screen and (max-width: 1240px) {
   .nav {
     display: -webkit-box;
@@ -1311,6 +1317,7 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 15px;
   }
   .icons .googleplayicon {
     margin-left: 10px !important;
