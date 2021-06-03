@@ -851,6 +851,39 @@ header {
   width: 30px !important;
 }
 
+.testimonal-image {
+  margin-top: 60px;
+  background-color: #D9D9D9;
+  padding: 30px 0 30px 0;
+}
+
+.testimonal-image h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.testimonal {
+  height: 60vh;
+  width: 50vw;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.testimonal .secondtestimonal {
+  margin-top: 15%;
+}
+
+.testimonal img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 @media only screen and (max-width: 1240px) {
   .nav {
     display: -webkit-box;
@@ -1061,6 +1094,9 @@ header {
   }
   .register-btn {
     padding: 0px 30px 3px 30px;
+  }
+  .testimonal {
+    height: 35vh;
   }
 }
 
@@ -1337,6 +1373,13 @@ header {
   }
   .SupportKarigars h2 {
     font-size: 1.6rem;
+  }
+  .testimonal-image h1 {
+    font-size: 25px;
+  }
+  .testimonal {
+    height: 30vh;
+    width: 60vw;
   }
 }
 
