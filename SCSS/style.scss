@@ -325,7 +325,7 @@
 }
   
 .shop{
-    background-color: #D6D9DD;
+    background-color: white;
     padding-top: 100px;
     margin-top: 50px;
     padding-bottom: 20px;
@@ -488,7 +488,6 @@
     }
   .footer-section{
     background-color: rgb(62, 83, 119);
-    margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     .footer{
@@ -640,24 +639,24 @@
     .testimonal-image{
         margin-top: 60px;
         background-color: white;
-        padding:30px 0 30px 0;
+        padding:30px 0 0px 0;
          h1{
              text-align: center;
              font-size: 40px;
              font-weight: 800;
-             margin-bottom: 50px;
+             margin-bottom: 25px;
          }
     }
     .testimonal{
-        height:62vh;
+        height:51vh;
         width:100%;
         overflow: hidden;
         margin:0 auto;
         .carousel-item{
             width:100%;
             .testimage{
-               width:50vw;
-               height:50vh;
+               width:30vw;
+               height:35vh;
                margin:0 auto;
                }
             img{
@@ -670,7 +669,43 @@
         
         
     }
+  .find-your-style{
+      width:100%;
+      padding-top: 50px;
+      .find-your-style-container{
+          height:400px;
+          max-width:1100px;
+          width: 90%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin:0 auto;
 
+          .find-your-style-container-text{
+              width: 50%;
+              h3{
+                  font-size: 40px;
+                  font-weight: 800;
+              }
+              p{
+                  font-size: 23px;
+                  font-weight: 400;
+                  margin-top: 20px;
+              }
+          }
+          .find-your-style-container-image{
+              width:50%;
+              padding-left: 20px;
+              img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+              }
+          }
+      }
+  }
     @media only screen and (max-width:1240px){
 
         // header css start
@@ -914,7 +949,27 @@
        .bullet-point {
         width: 100% !important;
       }
-      
+      .find-your-style .find-your-style-container{
+          flex-direction: column-reverse;
+      }
+      .find-your-style .find-your-style-container .find-your-style-container-text {
+          width: 100%;
+          margin-top: 35px;
+      }
+      .find-your-style .find-your-style-container .find-your-style-container-image {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 25px;
+       }
+       .find-your-style .find-your-style-container {
+        height: 550px;
+       }
+       .find-your-style .find-your-style-container .find-your-style-container-text h3 {
+        font-size: 30px;
+       }
+       .find-your-style .find-your-style-container .find-your-style-container-text p {
+        font-size: 18px;
+        }
     }
 
    @media only screen and (max-width:480px){
@@ -1123,6 +1178,10 @@
         height: 40vh;
         width: 90vw;
         margin-top: 0;
+    }
+    .testimonal .carousel-item .testimage {
+        width: 60vw;
+        height: 40vh;
     }
 }
 

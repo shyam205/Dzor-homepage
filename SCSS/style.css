@@ -459,7 +459,7 @@ header {
 }
 
 .shop {
-  background-color: #D6D9DD;
+  background-color: white;
   padding-top: 100px;
   margin-top: 50px;
   padding-bottom: 20px;
@@ -657,7 +657,6 @@ header {
 
 .footer-section {
   background-color: #3e5377;
-  margin-top: 50px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
@@ -854,18 +853,18 @@ header {
 .testimonal-image {
   margin-top: 60px;
   background-color: white;
-  padding: 30px 0 30px 0;
+  padding: 30px 0 0px 0;
 }
 
 .testimonal-image h1 {
   text-align: center;
   font-size: 40px;
   font-weight: 800;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .testimonal {
-  height: 62vh;
+  height: 51vh;
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -876,12 +875,64 @@ header {
 }
 
 .testimonal .carousel-item .testimage {
-  width: 50vw;
-  height: 50vh;
+  width: 30vw;
+  height: 35vh;
   margin: 0 auto;
 }
 
 .testimonal .carousel-item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.find-your-style {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.find-your-style .find-your-style-container {
+  height: 400px;
+  max-width: 1100px;
+  width: 90%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.find-your-style .find-your-style-container .find-your-style-container-text {
+  width: 50%;
+}
+
+.find-your-style .find-your-style-container .find-your-style-container-text h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.find-your-style .find-your-style-container .find-your-style-container-text p {
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.find-your-style .find-your-style-container .find-your-style-container-image {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.find-your-style .find-your-style-container .find-your-style-container-image img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
@@ -1168,6 +1219,30 @@ header {
   .bullet-point {
     width: 100% !important;
   }
+  .find-your-style .find-your-style-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .find-your-style .find-your-style-container .find-your-style-container-text {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .find-your-style .find-your-style-container .find-your-style-container-image {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 25px;
+  }
+  .find-your-style .find-your-style-container {
+    height: 550px;
+  }
+  .find-your-style .find-your-style-container .find-your-style-container-text h3 {
+    font-size: 30px;
+  }
+  .find-your-style .find-your-style-container .find-your-style-container-text p {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1388,6 +1463,10 @@ header {
     height: 40vh;
     width: 90vw;
     margin-top: 0;
+  }
+  .testimonal .carousel-item .testimage {
+    width: 60vw;
+    height: 40vh;
   }
 }
 
