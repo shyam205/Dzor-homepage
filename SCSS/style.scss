@@ -491,6 +491,7 @@
     background-color: rgb(62, 83, 119);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    margin-top: 60px;
     .footer{
         display: flex;
         .footer-firstsection{
@@ -707,6 +708,88 @@
           }
       }
   }
+  .dzor-people{
+      width:100%;
+      .dzor-people-container{
+          width:95%;
+          max-width: 1050px;
+          margin:0 auto 0 auto;
+          h1{
+            font-weight: 800;
+            font-size: 40px;
+          }
+          .dzor-people-container-box{
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              .dzor-people-container-imagebox{
+                  height: max-content;
+                  width:250px;
+                  .name{
+                    font-weight: 600;
+                    font-size: 19px;
+                    margin-top: 16px;
+                    padding: 0px;
+                  }
+                  .dzor-people-social-icon{
+                      height:20px;
+                      width: 20px;
+                      margin-top: -5px;
+                  }
+                  .dzor-people-container-imagebox-section{
+                      position: relative;
+                      overflow: hidden;
+                    .dzor-people-container-imagebox-imagesection{
+                        position: relative;
+                        width: 250px;
+                        height: 250px;
+                        overflow: hidden;
+                      img{
+                          height:100%;
+                          width: 100%;
+                          object-fit: cover;
+                          object-position: center;
+                      }
+                      
+                    }
+                    .dzor-people-container-imagebox-imagesection:hover ~ .dzor-people-container-imagebox-textsection{
+                        display: block;
+                    }
+                    .dzor-people-container-imagebox-textsection:hover{
+                        display: block;
+                    }
+                    .dzor-people-container-imagebox-textsection:hover p{
+                        opacity: 1;
+                    }
+                    .dzor-people-container-imagebox-textsection{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: #Ed5A6BCC;
+                        height: 250px;
+                        padding: 15px;
+                        display: none;
+                        transition: 0.4s all linear;
+                        p{
+                            position: relative;
+                            top: 75px;
+                            color: white;
+                            font-size: 14px;
+                        }
+                      }
+                      
+                  }
+                  .linkedinsocial{
+                          margin-left: 30px;
+                      }
+                  
+              }
+              .secondbox{
+                  margin-top: 45px;
+              }
+          }
+      }
+  }
     @media only screen and (max-width:1240px){
 
         // header css start
@@ -901,6 +984,12 @@
         .testimonal {
             height: 50vh;
            }
+           .dzor-people .dzor-people-container .dzor-people-container-box {
+            justify-content: space-around;
+        }
+        .tabbox{
+            margin-top: 40px;
+        }
     }
 
     @media only screen and (max-width:660px){
@@ -1183,6 +1272,9 @@
     .testimonal .carousel-item .testimage {
         width: 60vw;
         height: 40vh;
+    }
+    .mobbox{
+        margin-top: 40px;
     }
 }
 

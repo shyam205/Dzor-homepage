@@ -660,6 +660,7 @@ header {
   background-color: #3e5377;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  margin-top: 60px;
 }
 
 .footer-section .footer {
@@ -942,6 +943,112 @@ header {
      object-position: center;
 }
 
+.dzor-people {
+  width: 100%;
+}
+
+.dzor-people .dzor-people-container {
+  width: 95%;
+  max-width: 1050px;
+  margin: 0 auto 0 auto;
+}
+
+.dzor-people .dzor-people-container h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 250px;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .name {
+  font-weight: 600;
+  font-size: 19px;
+  margin-top: 16px;
+  padding: 0px;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-social-icon {
+  height: 20px;
+  width: 20px;
+  margin-top: -5px;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-container-imagebox-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-container-imagebox-section .dzor-people-container-imagebox-imagesection {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-container-imagebox-section .dzor-people-container-imagebox-imagesection img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-container-imagebox-section .dzor-people-container-imagebox-imagesection:hover ~ .dzor-people-container-imagebox-textsection {
+  display: block;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-container-imagebox-section .dzor-people-container-imagebox-textsection:hover {
+  display: block;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-container-imagebox-section .dzor-people-container-imagebox-textsection:hover p {
+  opacity: 1;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-container-imagebox-section .dzor-people-container-imagebox-textsection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #Ed5A6BCC;
+  height: 250px;
+  padding: 15px;
+  display: none;
+  -webkit-transition: 0.4s all linear;
+  transition: 0.4s all linear;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .dzor-people-container-imagebox-section .dzor-people-container-imagebox-textsection p {
+  position: relative;
+  top: 75px;
+  color: white;
+  font-size: 14px;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .dzor-people-container-imagebox .linkedinsocial {
+  margin-left: 30px;
+}
+
+.dzor-people .dzor-people-container .dzor-people-container-box .secondbox {
+  margin-top: 45px;
+}
+
 @media only screen and (max-width: 1240px) {
   .nav {
     display: -webkit-box;
@@ -1155,6 +1262,13 @@ header {
   }
   .testimonal {
     height: 50vh;
+  }
+  .dzor-people .dzor-people-container .dzor-people-container-box {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .tabbox {
+    margin-top: 40px;
   }
 }
 
@@ -1468,6 +1582,9 @@ header {
   .testimonal .carousel-item .testimage {
     width: 60vw;
     height: 40vh;
+  }
+  .mobbox {
+    margin-top: 40px;
   }
 }
 
